@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    
+    --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+    --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    background-color: var(--very-dark-blue-mainbg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 0;
+    color: var(--soft-blue);
+}
+
+.container {
+    max-width: 330px;
+    height: 550px;
+    background-color: var(--very-dark-blue-cardbg);
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.limiter {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container img {
+    border-radius: 7px;
+    width: 100%;
+}
+
+.container .header {
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color .3s;
+}
+
+.container .header:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.container .description {
+    line-height: 1.5;
+}
+
+.container .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .info .ether {
+    font-weight: 600;
+    color: var(--cyan);
+}
+
+.container .info .ether img {
+    width: 11px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+}
+
+.container .info .time img {
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+    vertical-align: text-bottom;
+}
+
+.container hr {
+    border: none;
+    border-top: 1px solid var(--very-dark-blue-line);
+}
+
+.container .creator {
+    position: relative;
+    text-align: center;
+}
+
+.container .creator img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.container .creator span {
+    font-weight: 400;
+    color: var(--white);
+    transition: color .3s;
+}
+
+.container .creator span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
